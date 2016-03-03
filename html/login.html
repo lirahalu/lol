@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOL小站</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+
+    .navbar-img
+    {
+        float: left;
+        margin:12px 5px 0 0;
+    }
+    .navbar-brand
+    {
+        font-size:25px;
+    }
+    .L-Con,.L-Con>img
+    {
+        width:100%;
+    }
+    .L-Con
+    {
+        position: relative;
+
+    }
+    .L-Con>div
+    {
+        text-align: center;   
+        
+    }
+  .L-Con>div b
+  {
+    font-size:35px;
+    line-height: 100px;
+  }
+    .navbar
+    {
+        margin-bottom:0;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .L-Con_Box
+    {
+        width:500px;
+        height:400px;
+       background: url('../images/loginpx.png');
+      
+        position: absolute;
+        left:50%;
+        margin-left:-250px;
+        top:150px;
+    }
+     .L-Con_Box input[type='text'],.L-Con_Box input[type='password']
+    {
+        display:block;
+        width:80%;
+        height:50px;
+        margin-left: 10%;
+        margin-bottom: 20px;
+       border-radius:5px;
+       border:1px solid #dedede; 
+       padding-left: 15px;
+       background: url('../images/loginpx2.png');
+    }
+     .lgbtn,.zcbtn
+    {
+        display:block;
+        width:80%;
+        height:50px;
+        margin-left: 10%;
+        margin-bottom: 18px;
+        font-size:25px;
+        color:#fff;
+        border-radius:5px;
+    } 
+    .lgbtn{
+        background:#ffe744;
+    }
+    .zcbtn{
+        border:2px solid #ffe744;
+        background:none;
+        color:#ffe744;
+         background: url('../images/loginpx2.png');
+    }
+    </style>
+</head>
+<body>
+<!-- 导航 -->
+ <nav class="navbar navbar-default navbar-top ">
+    <div class="container overflow">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false"
+                    class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <img class="navbar-img" alt="Brand" src="../images/Logo.png" width="30" height="25">
+            <a class="navbar-brand" href="#"><b>英雄联萌</b></a>
+          
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="navigation" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">攻略</a></li>
+                <li><a href="#">图片</a></li>
+                <li><a href="#">英雄资料</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#" rel="nofollow" target="_blank" class="navbar-rightLastButton fusioo-blue-text" >登陆</a></li>
+                <li><a href="#" rel="nofollow" target="_blank" class="navbar-rightLastButton fusioo-blue-text" >注册</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--注册主体内容 -->
+ <div class="L-Con">
+    <img src='../images/LoginImg.png'>
+    <div class="L-Con_Box">
+  
+          <div><b>英雄联萌</b><div>
+        <input placeholder="请输入您的账号" type="text"></input>
+        <input placeholder="请输入您的密码" type="password"></input>
+        <input type="button" value="登&nbsp;录" class='lgbtn'></input>
+        <input type="button" value="注&nbsp;册" class='zcbtn'></input>
+    </div>
+</div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
