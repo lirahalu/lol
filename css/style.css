@@ -1,0 +1,15 @@
+.p1{
+    font-size: 30px;
+    color: #0086b3;
+}
+.cintainer-col {
+    margin-top: 40px;
+}
+.getmore{
+    float: right;
+}
+.video li{
+    list-style: none;
+    margin: 20px;
+    float: left;
+}
