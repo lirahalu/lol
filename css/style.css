@@ -8,7 +8,7 @@
 .getmore{
     float: right;
 }
-.video li{
+.row li{
     list-style: none;
     margin: 20px;
     float: left;
