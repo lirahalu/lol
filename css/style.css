@@ -13,3 +13,17 @@
     margin: 20px;
     float: left;
 }
+.head-i{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: x-large;
+    line-height: 34px;
+}
+.head-text{
+    line-height: 34px;
+}
+.strategy-head.video-head{
+    height: 34px;
+}
+.index-hero{
+    margin-top: 40px;
+}
