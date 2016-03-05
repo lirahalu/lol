@@ -13,6 +13,7 @@
     margin: 20px;
     float: left;
 }
+<<<<<<< HEAD
 .head-i{
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: x-large;
@@ -27,3 +28,15 @@
 .index-hero{
     margin-top: 40px;
 }
+=======
+input, select {
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	border-radius: 0px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+* {
+	font-family: "Arial", "黑体", "sans-serif";
+}
+>>>>>>> master
