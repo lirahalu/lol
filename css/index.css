@@ -5,9 +5,12 @@
 .cintainer-col {
     margin-top: 40px;
 }
-.col-md-8,.col-md-3{
+.col-md-8,.col-md-3,.col-md-6,.col-md-4,.col-md-5{
     border: 2px solid whitesmoke;
     padding: 10px;
+}
+.row{
+    margin: -10px;
 }
 .col-md-3{
     float: right;
@@ -22,43 +25,114 @@
 .head-text-default,.head-text:hover {
     color: deepskyblue;
 }
-.video-list li{
+.body-list li{
     list-style: none;
     margin: 20px;
     float: left;
 }
 h2{
     float: left;
-    width: 100px;
+    width: 130px;
     margin: 0;
+    text-align: center;
         }
-.strategy-head.video-head{
+.left-head{
     height: 34px;
 }
 .index-hero{
     margin-top: 40px;
 }
-.video-head{
-    height: 33px;
-}
 .right{
     height: 33px;
     line-height: 33px;
 }
-.video-list>li{
+.video-left-list>li{
     float: left;
     margin: 0 20px 20px 0;
     overflow: hidden;
     width: 184px;
     height: 140px;
 }
-.video-list>li:hover{
+.video-left-list>li:hover{
     overflow: visible;
 }
-.video-right-head{
-font-size: 20px;
+.right-head{
+    font-size: 20px;
+    float: left;
+    color: deepskyblue;
 }
-.m-list>li{
-    border: 0;
-    margin: 0;
+.video-list>li{
+    margin: 10px;
+}
+.minilogo{
+    float: left;
+}
+.date{
+    float: right;
+}
+.strategy-list>li{
+    margin: 10px;
+}
+.picture-nav>li{
+    text-decoration: none;
+    width: 80px;
+    height: 28px;
+    font-size: 20px;
+    float: left;
+}
+.picture-body img{
+    float: left;
+    position: relative;
+}
+.picture-body span{
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    font-size: 16px;
+    color: #fff;
+}
+.picture-body{
+    margin-top: 10px;
+}
+.data .col-md-3{
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    height: 400px;
+}
+.checkbox-inline{
+    display: inline-block;
+    line-height: 20px;
+    font-size: 20px;
+    padding-left: 3px;
+}
+.hero__list{
+    height: 400px;
+    overflow: auto;
+    width: 750px;
+}
+.hero__list ul{
+    list-style:none
+}
+.hero__list li{
+    float: left;
+    position: relative;
+    padding: 20px;
+}
+.hero__list img{
+    height: 60px;
+
+}
+.hero__list em{
+ display: block;
+}
+.foot{
+    background-color:whitesmoke;
+    height: 200px;
+    margin-top: 40px;
 }
