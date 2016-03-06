@@ -1,37 +1,3 @@
-<<<<<<< HEAD
-=======
-.p1{
-    font-size: 30px;
-    color: #0086b3;
-}
-.cintainer-col {
-    margin-top: 40px;
-}
-.getmore{
-    float: right;
-}
-.row li{
-    list-style: none;
-    margin: 20px;
-    float: left;
-}
-
-.head-i{
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: x-large;
-    line-height: 34px;
-}
-.head-text{
-    line-height: 34px;
-}
-.strategy-head.video-head{
-    height: 34px;
-}
-.index-hero{
-    margin-top: 40px;
-}
-
->>>>>>> master
 input, select {
 	-webkit-appearance: none;
 	border: none;
@@ -42,7 +8,10 @@ input, select {
 * {
 	font-family: "Arial", "黑体", "sans-serif";
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
+a:link{
+    color: black;
+}
+a:hover{
+    color: #23527c;
+    text-decoration: dashed;
+}
