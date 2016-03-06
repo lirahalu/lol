@@ -6,7 +6,7 @@
     margin-top: 40px;
 }
 .col-md-8,.col-md-3,.col-md-6,.col-md-4,.col-md-5{
-    border: 2px solid whitesmoke;
+    /*border: 2px solid whitesmoke;*/
     padding: 10px;
 }
 .row{
@@ -15,18 +15,15 @@
 .col-md-3{
     float: right;
 }
+.nav-tabs{
+    float: left;
+}
 .getmore{
     float: right;
     line-height: 33px;
 }
-.head-text{
-    line-height: 33px;
-}
-.head-text-default,.head-text:hover {
-    color: deepskyblue;
-}
+
 .body-list li{
-    list-style: none;
     margin: 20px;
     float: left;
 }
@@ -111,10 +108,13 @@ h2{
     font-size: 20px;
     padding-left: 3px;
 }
+.data span{
+    margin: 10px;
+}
 .hero__list{
     height: 400px;
     overflow: auto;
-    width: 750px;
+    width: 800px;
 }
 .hero__list ul{
     list-style:none
@@ -122,14 +122,14 @@ h2{
 .hero__list li{
     float: left;
     position: relative;
-    padding: 20px;
+    padding: 10px;
 }
 .hero__list img{
     height: 60px;
-
 }
 .hero__list em{
  display: block;
+    text-align: center;
 }
 .foot{
     background-color:whitesmoke;
