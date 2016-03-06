@@ -110,6 +110,11 @@ h2{
 }
 .data span{
     margin: 10px;
+    height: 26px;
+    display: block;
+}
+.filter{
+    -webkit-appearance: normal;
 }
 .hero__list{
     height: 400px;
