@@ -114,7 +114,7 @@ h2{
     display: block;
 }
 .filter{
-    -webkit-appearance: normal;
+    -webkit-appearance:normal !important;
 }
 .hero__list{
     height: 400px;
@@ -140,4 +140,7 @@ h2{
     background-color:whitesmoke;
     height: 200px;
     margin-top: 40px;
+}
+#keyworld{
+    margin: 10px;
 }
