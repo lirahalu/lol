@@ -104,14 +104,18 @@ h2{
 }
 .checkbox-inline{
     display: inline-block;
-    line-height: 20px;
-    font-size: 20px;
-    padding-left: 3px;
+    line-height: 15px;
+    font-size: 15px;
+    margin: 10px;
 }
-.data span{
+.data-left>span{
     margin: 10px;
     height: 26px;
     display: block;
+    font-size: 18px;
+}
+#keyworld{
+    margin: 10px;
 }
 .filter{
     -webkit-appearance:normal !important;
@@ -136,11 +140,20 @@ h2{
  display: block;
     text-align: center;
 }
-.foot{
-    background-color:whitesmoke;
-    height: 200px;
+.foot {
+    background-color: whitesmoke;
+    height: 100px;
     margin-top: 40px;
 }
-#keyworld{
-    margin: 10px;
+.waper{
+   position: relative;
+    top: -50px;
+}
+.waper li{
+    display: inline-block;
+    margin: 20px;
+}
+.waper p{
+    display: inline-block;
+    margin-left: 60px;
 }
