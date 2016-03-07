@@ -106,7 +106,7 @@ h2{
     display: inline-block;
     line-height: 15px;
     font-size: 15px;
-    margin: 10px;
+    margin: 10px !important;
 }
 .data-left>span{
     margin: 10px;
@@ -145,15 +145,11 @@ h2{
     height: 100px;
     margin-top: 40px;
 }
-.waper{
-   position: relative;
-    top: -50px;
-}
 .waper li{
     display: inline-block;
-    margin: 20px;
+    margin: 20px 20px 20px 60px;
 }
 .waper p{
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 100px;
 }
