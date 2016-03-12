@@ -1,12 +1,11 @@
 .navbar-img{
    padding-top: 5px;/*µº∫ΩÕº∆¨≈≈∞Ê*/
 }
-.nav-img{
-    background-image: url("../images/Logo.png");
-    width: 60px;
-    height: 50px;
-    background-repeat: no-repeat;
-    
+.navbar-brand{
+    width: 160px;
+    background: url("../images/Logo.png") no-repeat;
+    background-size: 50px 40px ;
+    background-position: 100px 5px;
 }
 .subtitle{
     font-size: 30px;
@@ -23,10 +22,6 @@
     margin-top: 10px;
     margin-left: 80px;
 }
-/*.col-md-8,.col-md-3,.col-md-6,.col-md-4,.col-md-5{
-   /!* border: 2px solid whitesmoke;*!/
-    padding: 10px;
-}*/
 .nav-tabs{
     float: left;
 }
