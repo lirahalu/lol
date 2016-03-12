@@ -12,94 +12,123 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
- <nav class="navbar navbar-default navbar-top navbar-fixed-top ">
+ <nav class="navbar navbar-default  navbar-fixed-top"> <!--固定导航栏-->
     <div class="container overflow">
-        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- 响应式导航栏 -->
         <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false"
-                    class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span
-                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <button type="button" data-toggle="collapse" data-target="#navigation" class="navbar-toggle collapsed">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="#">LOL小站</a>
             <img class="navbar-img" alt="Brand" src="images/Logo.png" width="60" height="50">
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!--导航列表 -->
         <div id="navigation" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-center">
-                <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="#">首页</a></li>
                 <li><a href="#">视频</a></li>
                 <li><a href="#">攻略</a></li>
                 <li><a href="#">图片</a></li>
                 <li><a href="#">英雄资料</a></li> 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="html/login.html" rel="nofollow" target="_blank" class="navbar-rightLastButton fusioo-blue-text" >登陆</a></li>
-                <li><a href="html/regi.html" rel="nofollow" target="_blank" class="navbar-rightLastButton fusioo-blue-text" >注册</a></li>
+                <li><a href="html/login.html" target="_blank" class="navbar-rightLastButton fusioo-blue-text" >登陆</a></li>
+                <li><a href="html/regi.html" target="_blank" class="navbar-rightLastButton fusioo-blue-text" >注册</a></li>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
+ <!--头部-->
  <div class="container overflow index-hero">
      <div class="row hero">
-         <div class="col-md-6 cintainer-col"><h1>最强王者</h1><h1>您还差一个靠谱的论坛</h1>
-
-             <p class="p1">嘴强王者   or  最强王者   从这一刻开始！</p>
-
+         <div class="col-md-6 header-col">
+             <h1>最强王者</h1>
+             <h1>您还差一个靠谱的论坛</h1>
+             <small class="subtitle">嘴强王者 or 最强王者 从这一刻开始！</small>
          </div>
-   <div class="col-md-2">   <img class="container-image" src="images/官方图标.jpg"></div>
+         <div class="col-md-6">
+             <div class="search">
+                 <form action="#" class="searchform form-inline" target="_blank">
+                     <input name="keyword" type="text" class="form-control" id="search-keyword" placeholder="输入想要看的内容" >
+                     <button type="submit" class="btn btn-default">搜索</button>
+                 </form>
+             </div>
+             <img class="header-image" src="images/官方图标.jpg">
+         </div>
      </div>
 <hr>
      <div class="row video">
-         <div class="col-md-8">
+         <div class="col-md-8 col-xs-12">
              <div class="left-head">
                     <img class="minilogo" src="images/minilogo/video-mini.png" height="33" >
                     <h2>视频</h2>
-                 <ul class="nav nav-tabs">
-                     <li role="presentation" class="active"><a href="#">最新投稿</a></li>
-                     <li role="presentation"><a href="#">有新动态</a></li>
+                    <ul class="nav nav-tabs">
+                      <li role="presentation" class="active"><a href="#">最新投稿</a></li>
+                      <li role="presentation"><a href="#">有新动态</a></li>
                     </ul>
-                 <div class="getmore">
-                     <a href="#">更多</a>
-                 </div>
+                    <div class="getmore">
+                      <a href="#">更多</a>
+                    </div>
               </div>
              <div class="video-body">
-                 <ul class="video-left-list">
+                 <ul class="video-left-list list-inline">
                      <li>
                          <a title="IEM总决赛：TSM vs EVER 出线之争" href="http://v.huya.com/play/1297629-321079896637.html" class="video-img">
-                             <img alt="IEM总决赛：TSM vs EVER 出线之争"  width="184" title="IEM总决赛：TSM vs EVER 出线之争" src="http://vimg.dwstatic.com/1609/1297629/9-220x124.jpg">
-                             <span>IEM总决赛：TSM vs EVER 出线之争</span>
+                             <img alt="IEM总决赛：TSM vs EVER 出线之争"  width="178" title="IEM总决赛：TSM vs EVER 出线之争" src="http://vimg.dwstatic.com/1609/1297629/9-220x124.jpg">
+                             <div class="time">10:00</div>
+                             <div class="title">IEM总决赛：TSM vs EVER 出线之争</div>
+                             <div class="play">点击数:200</div>
+                             <div class="comments">评论数:100</div>
                          </a>
                      </li>  <li>
                      <a title="IEM总决赛：CLG vs SKT秀翻全场的EZ" href="http://v.huya.com/play/1311928.html" class="video-img">
-                         <img alt="IEM总决赛：CLG vs SKT秀翻全场的EZ" width="184" title="IEM总决赛：CLG vs SKT秀翻全场的EZ" src="http://vimg.dwstatic.com/1609/1311928/9-220x124.jpg">
-                         <span>IEM总决赛：CLG vs SKT秀翻全场的EZ</span>
+                         <img alt="IEM总决赛：CLG vs SKT秀翻全场的EZ" width="178" title="IEM总决赛：CLG vs SKT秀翻全场的EZ" src="http://vimg.dwstatic.com/1609/1311928/9-220x124.jpg">
+                         <div class="time">10:00</div>
+                         <div class="title">IEM总决赛：CLG vs SKT秀翻全场的EZ</div>
+                         <div class="play">点击数:200</div>
+                         <div class="comments">评论数:100</div>
                      </a>
                      </li>  <li>
                      <a title="最强操作：低两级也能单杀这就是VN" href="http://v.huya.com/play/1297633.html" class="video-img">
-                         <img alt="最强操作：低两级也能单杀这就是VN"  width="184" title="最强操作：低两级也能单杀这就是VN" src="http://vimg.dwstatic.com/1609/1297633/9-220x124.jpg">
-                         <span>最强操作：低两级也能单杀这就是VN</span>
+                         <img alt="最强操作：低两级也能单杀这就是VN"  width="178" title="最强操作：低两级也能单杀这就是VN" src="http://vimg.dwstatic.com/1609/1297633/9-220x124.jpg">
+                         <div class="time">10:00</div>
+                         <div  class="title">最强操作：低两级也能单杀这就是VN</div>
+                         <div class="play">点击数:200</div>
+                         <div class="comments">评论数:100</div>
                      </a>
                      </li>  <li>
                      <a title="IEM总决赛：EVER vs RNG二连胜RNG晋级" href="http://v.huya.com/play/1297241.html" class="video-img">
-                         <img alt="IEM总决赛：EVER vs RNG二连胜RNG晋级" width="184" title="IEM总决赛：EVER vs RNG二连胜RNG晋级" src="http://vimg.dwstatic.com/1609/1297241/9-220x124.jpg">
-                         <span>IEM总决赛：EVER vs RNG二连胜RNG晋级</span>
+                         <img alt="IEM总决赛：EVER vs RNG二连胜RNG晋级" width="178" title="IEM总决赛：EVER vs RNG二连胜RNG晋级" src="http://vimg.dwstatic.com/1609/1297241/9-220x124.jpg">
+                         <div class="time">10:00</div>
+                         <div class="title">IEM总决赛：EVER vs RNG二连胜RNG晋级</div>
+                         <div class="play">点击数:200</div>
+                         <div class="comments">评论数:100</div>
                      </a>
                      </li>
                      <li>
-                         <a title="在座的各位都是垃圾！IEM全球首个五杀" href="http://v.huya.com/play/1294047.html" class="video-img">
-                             <img alt="在座的各位都是垃圾！IEM全球首个五杀" width="184" title="在座的各位都是垃圾！IEM全球首个五杀" src="http://vimg.dwstatic.com/1609/1294047/9-220x124.jpg">
-                             <span>在座的各位都是垃圾！IEM全球首个五杀</span>
-                         </a>
+                      <a title="在座的各位都是垃圾！IEM全球首个五杀" href="http://v.huya.com/play/1294047.html" class="video-img">
+                         <img alt="在座的各位都是垃圾！IEM全球首个五杀" width="178" title="在座的各位都是垃圾！IEM全球首个五杀" src="http://vimg.dwstatic.com/1609/1294047/9-220x124.jpg">
+                         <div class="time">10:00</div>
+                         <div class="title">在座的各位都是垃圾！IEM全球首个五杀</div>
+                         <div class="play">点击数:200</div>
+                         <div class="comments">评论数:100</div>
+                      </a>
                      </li>  <li>
                      <a title="两分钟赛事回顾 RNG势如破竹成功晋级" href="http://v.huya.com/play/1297246-321055816076.html" class="video-img">
-                         <img alt="两分钟赛事回顾 RNG势如破竹成功晋级" width="184" title="两分钟赛事回顾 RNG势如破竹成功晋级" src="http://vimg.dwstatic.com/1609/1297246/9-220x124.jpg">
-                         <span>两分钟赛事回顾 RNG势如破竹成功晋级</span>
+                         <img alt="两分钟赛事回顾 RNG势如破竹成功晋级" width="178" title="两分钟赛事回顾 RNG势如破竹成功晋级" src="http://vimg.dwstatic.com/1609/1297246/9-220x124.jpg">
+                         <div class="time">10:00</div>
+                         <div class="title">两分钟赛事回顾 RNG势如破竹成功晋级</div>
+                         <div class="play">点击数:200</div>
+                         <div class="comments">评论数:100</div>
                      </a>
                      </li>
                  </ul>
              </div>
-             </div>
-         <div class="col-md-4">
+         </div>
+         <div class="col-md-4 col-xs-12">
              <div class="b-head">
                  <div class="right">
                      <span class="right-head">排行</span>
@@ -108,22 +137,18 @@
              <div class="video-body">
                  <div class="right-list" style="overflow: hidden">
                      <ul class="video-list">
-
                          <li class="top">
-                             <i class="num">1</i>
+                             <i class="num n1">1</i>
                              <a href="http://v.huya.com/play/1297246-321055816076.html">两分钟赛事回顾 RNG势如破竹成功晋级</a>
                          </li>
-
                          <li class="top">
-                             <i class="num">2</i>
+                             <i class="num n2">2</i>
                              <a href="http://v.huya.com/play/1295727.html">IEM总决赛：RNG vs OG 中国队开门红</a>
                          </li>
-
                          <li class="top">
-                             <i class="num">3</i>
+                             <i class="num n3">3</i>
                              <a href="http://v.huya.com/play/1297241.html">IEM总决赛：EVER vs RNG二连胜RNG晋级</a>
                          </li>
-
                          <li>
                              <i class="num">4</i>
                              <a href="http://v.huya.com/play/1288702.html">新英雄终于来了！来自星空的神秘巨龙</a>
@@ -153,10 +178,10 @@
                  </div>
              </div>
          </div>
-     </div>
+      </div>
      <hr>
-     <div class="row strategy">
-         <div class="col-md-6">
+     <div class="roj,wstrategy">
+         <div class="col-md-5">
              <div class="left-head">
                  <img class="minilogo" src="images/minilogo/strategy-mini.png" height="33" >
                  <h2 class="second-h2">攻略</h2>
@@ -180,7 +205,7 @@
                  </ul>
              </div>
          </div>
-         <div class="col-md-6">
+         <div class="col-md-5 col-md-offset-2">
              <div class="b-head">
                  <div class="right">
                      <span class="right-head">英雄攻略</span>
@@ -208,8 +233,9 @@
          </div>
      </div>
      <hr>
-     <div class="row picture">
-             <div class="left-head">
+    <div class="row picture">
+        <div class="col-md-12">
+        <div class="left-head">
                  <img class="minilogo" src="images/minilogo/picture-mini.png" height="33" >
                  <h2>图片</h2>
                  <ul class="nav nav-tabs">
@@ -224,18 +250,19 @@
              </div>
              <div class="picture-body">
                  <div class="pic-left">
-                     <a href="#"><img src="images/picture/三国风赵信赵云.jpg" alt=""  width="386"><span>三国风赵信赵云</span></a>
+                     <a href="#"><img src="images/picture/三国风赵信赵云.jpg" alt=""  width="380"><span>三国风赵信赵云</span></a>
                  </div>
                  <div class="pic-mid">
-                     <a href="#"><img src="images/picture/齐天大圣.jpg" alt="" width="386" ><span>齐天大圣</span></a>
+                     <a href="#"><img src="images/picture/齐天大圣.jpg" alt="" width="380" ><span>齐天大圣</span></a>
                  </div>
                  <div class="pic-rig">
-                     <a href="#"><img src="images/picture/泳池派对设计图.jpeg" alt="" width="386"><span>泳池派对</span></a>
+                     <a href="#"><img src="images/picture/泳池派对设计图.jpeg" alt="" width="380"><span>泳池派对</span></a>
                  </div>
              </div>
+        </div>
      </div>
      <hr>
-     <div class="row data">
+    <div class="row data">
              <div class="left-head">
                  <img class="minilogo" src="images/minilogo/data-mini.png" height="33" >
                  <h2 class="second-h2">英雄资料</h2>
@@ -247,7 +274,7 @@
              <div class="data-left">
                  <span>搜索英雄</span>
              <div class="select_text">
-                 <input type="text" placeholder="输入英雄名称快速检索" id="keyworld">
+                 <input type="text" class="form-control" placeholder="输入英雄名称快速检索" id="keyworld">
              </div>
              <span>战场定位</span>
                  <div class="select__item" id="champion_tags_search">
@@ -1023,7 +1050,6 @@
              </div>
          </div>
      </div>
-</div>
  <div class="foot">
      <div class="waper">
          <ul>
@@ -1034,6 +1060,6 @@
      </div>
  </div>
 <script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
