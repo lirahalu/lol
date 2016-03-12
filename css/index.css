@@ -1,20 +1,25 @@
-.p1{
-    font-size: 30px;
-    color: #0086b3;
+.navbar-img{
+   padding-top: 5px;/*导航图片排版*/
 }
-.cintainer-col {
+.subtitle{
+    font-size: 30px;
+    color: #0086b3;/*副标题*/
+}
+.header-col {
     margin-top: 40px;
 }
-.col-md-8,.col-md-3,.col-md-6,.col-md-4,.col-md-5{
-    /*border: 2px solid whitesmoke;*/
-    padding: 10px;
-}
-.row{
-    margin: -10px;
-}
-.col-md-3{
+.search{
+    margin-top: 70px;
     float: right;
 }
+.header-image{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+/*.col-md-8,.col-md-3,.col-md-6,.col-md-4,.col-md-5{
+   /!* border: 2px solid whitesmoke;*!/
+    padding: 10px;
+}*/
 .nav-tabs{
     float: left;
 }
@@ -22,17 +27,21 @@
     float: right;
     line-height: 33px;
 }
-
-.body-list li{
+.video .getmore{
+    margin-right: 100px;
+}
+.video-left-list{
     margin: 20px;
-    float: left;
 }
 h2{
     float: left;
     width: 130px;
     margin: 0;
     text-align: center;
-        }
+}
+.minilogo{
+    float: left;
+}
 .left-head{
     height: 34px;
 }
@@ -50,25 +59,56 @@ h2{
     width: 184px;
     height: 140px;
 }
-.video-left-list>li:hover{
-    overflow: visible;
+.video-body .time{
+    margin-left: 140px;
+    margin-top: -20px;
+    color: white;
+    background-color: #555555;
+    z-index: 999;
+    position: absolute;
+    display: inline;
+}
+.video-body .title{
+    height: 20px;
+    line-height: 20px;
+    transition: all .2s linear;
+    color: #222;
+    overflow: hidden;
+    width: 178px ;
+}
+.video-body .play{
+    float: left;
+    display: inline;
+}
+.video-body .comments{
+    float: right;
+    display: inline;
 }
 .right-head{
     font-size: 20px;
     float: left;
-    color: deepskyblue;
 }
 .video-list>li{
-    margin: 10px;
+    margin: 20px 0px;
 }
-.minilogo{
-    float: left;
+.num{
+    color: #fff;
+    text-align: center;
+    background-color: #b8c0cc;
+    border-radius: 4px;
+    padding: 0 3px 0 3px;
+    font-weight: bolder;
+    font-family: "Arial", "黑体", "sans-serif";
 }
+.n1,.n2,.n3{
+    background-color: red;
+}
+
 .date{
     float: right;
 }
 .strategy-list>li{
-    margin: 10px;
+    margin: 10px 10px 10px 0;
 }
 .picture-nav>li{
     text-decoration: none;
@@ -114,8 +154,9 @@ h2{
     display: block;
     font-size: 18px;
 }
-#keyworld{
+.data .form-control{
     margin: 10px;
+    width: 80%;
 }
 .filter{
     -webkit-appearance:normal !important;
