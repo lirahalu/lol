@@ -1,6 +1,11 @@
 .navbar-img{
    padding-top: 5px;/*导航图片排版*/
 }
+.nav-img{
+    background-image: url("../images/Logo.png");
+    width: 60px;
+    height: 50px;
+}
 .subtitle{
     font-size: 30px;
     color: #0086b3;/*副标题*/
