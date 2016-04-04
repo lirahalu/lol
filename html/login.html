@@ -91,9 +91,17 @@
     }
     .zcbtn{
         border:2px solid #658fdd;
-        background:none;
+
         color:#658fdd;
         background: url('../images/loginpx2.png');
+    }
+    label{
+        text-align:left;
+        margin-left:10%;
+        margin-top:5px;
+        color:#ff3232;
+        text-indent: 15px;
+        float: left;
     }
     </style>
 </head>
@@ -132,14 +140,49 @@
     <img src='../images/LoginImg.png'>
     <div class="L-Con_Box">
         <div class="L-Con_T"><img  src="../images/Logo2.png" width="400" height="102"><div>
-        <input placeholder="请输入您的账号" type="text"></input>
-        <input placeholder="请输入您的密码" type="password"></input>
-        <input type="button" value="登&nbsp;录" class='lgbtn'></input>
-        <input type="button" value="注&nbsp;册" class='zcbtn'></input>
+            <form action="#">
+                <input placeholder="请输入您的账号" name="username" type="text">
+                <input placeholder="请输入您的密码" name="password" type="password">
+                <input type="submit" value="登&nbsp;录" class='lgbtn'>
+                <input type="button" value="注&nbsp;册" class='zcbtn'>
+            </form>
     </div>
 </div>
 
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="../js/jquery-2.2.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate-1.13.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                validator = $("form").validate({
+                    rules: {
+                        username: {
+                            required: true,
+                            minlength: 2,
+                            maxlength: 16
+                        },
+                        password: {
+                            required: true,
+                            minlength: 6,
+                            maxlength: 16
+                        }
+                    },
+                    messages: {
+                        username: {
+                            required: "必须填写用户名",
+                            minlength: "用户名最小为2位",
+                            maxlength: "用户名最大为10位",
+                            rangelength: "用户名应该在2-10位",
+                            remote: "用户名不存在"
+                        },
+                        password: {
+                            required: "必须填写密码",
+                            minlength: "密码最小为6位",
+                            maxlength: "密码最大为16位"
+                        }
+                    }
+                })
+            });
+        </script>
 </body>
 </html>
