@@ -96,14 +96,13 @@
         color:#658fdd;
         background: url('../images/loginpx2.png');
     }
-    .L_Con_Prompt
-    {
-        text-align:left;
-        margin-left:10%;
-        margin-top:5px;
-        color:#ff3232;
-        text-indent: 15px;
-
+    label{
+            text-align:left;
+            margin-left:10%;
+            margin-top:5px;
+            color:#ff3232;
+            text-indent: 15px;
+            float: left;
     }
     </style>
 </head>
@@ -142,17 +141,58 @@
     <img src='../images/LoginImg.png'>
     <div class="L-Con_Box">
         <div class="L-Con_T"><b>欢迎注册英雄联萌</b>
-        <input placeholder="请输入您的账户名" type="text"></input>
-        <div class='L_Con_Prompt'>账户名重复！</div>
-        <input placeholder="请输入您的密码" type="password"></input>
-        <div class='L_Con_Prompt'>密码过短，请输入6位以上！</div>
-        <input placeholder="请确认您的密码" type="password"></input>
-        <div class='L_Con_Prompt'>密码不一致！</div>
-        <input type="button" value="确&nbsp;定&nbsp;注&nbsp;册" class='lgbtn'></input>
-    </div>
-</div>
 
-<script src="js/jquery-2.2.0.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+            <form action="#">
+                <input placeholder="请输入您的账户名" type="text" name="username" id="username">
+                <input placeholder="请输入您的密码" type="password" id="password" name="password">
+                <input placeholder="请确认您的密码" type="password" name="confirm-password">
+                <input type="submit" value="确&nbsp;定&nbsp;注&nbsp;册" class='lgbtn'>
+            </form>
+        </div>
+</div>
+     <script src="../js/jquery-2.2.0.min.js"></script>
+     <script src="../js/bootstrap.min.js"></script>
+     <script src="../js/jquery.validate-1.13.1.js"></script>
+<script>
+
+    $(document).ready(function () {
+        validator = $("form").validate({  debug: true,
+
+            rules: {
+                username: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 16
+                },
+                password: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 16
+                },
+                "confirm-password": {
+                    equalTo: "#password"
+                }
+            },
+            messages: {
+                username: {
+                    required: "必须填写用户名",
+                    minlength: "用户名最小为2位",
+                    maxlength: "用户名最大为10位",
+                    rangelength: "用户名应该在2-10位",
+                    remote: "用户名不存在"
+                },
+                password: {
+                    required: "必须填写密码",
+                    minlength: "密码最小为6位",
+                    maxlength: "密码最大为16位"
+                },
+                "confirm-password": {
+                    equalTo: "两次输入的密码不一致"
+                }
+            }
+        })
+    });
+</script>
+
 </body>
 </html>
